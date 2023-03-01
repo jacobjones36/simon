@@ -19,3 +19,50 @@ main {
 footer{
     flex: 0 30px;
 }
+
+menu {
+    flex:1;
+    display: flex;
+    flex-direction:row !important;
+    list-style: none;
+}
+
+.navbar-brand {
+    padding-left: 0.3em;
+    border-bottom: solid rgb(182, 182, 182) thin;
+}
+
+menu .nav-item {
+    padding: 0 0.3em;
+}
+
+footer a {
+    float:right;
+}
+
+#count {
+    color: rgb(246, 239, 158);
+}
+
+.players {
+    flex: 1;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.player-name {
+    color: rgb(118, 190, 210);
+}
+
+.game {
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px rgb(69, 69, 69);
+    width: 80vw;
+    height: 80vw;
+    position: absolute;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: min(80vmin, 1000px);
+    max-height: min(80vmin, 1000px);
+}
