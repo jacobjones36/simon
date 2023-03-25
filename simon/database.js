@@ -1,7 +1,7 @@
 const {MongoClient} = require('mongodb');
 
-const userName = process.env.cs260;
-const password = process.env.cs260password;
+const userName = process.env.MONGOUSER;
+const password = process.env.MONGOPASSWORD;
 const hostname = process.env.MONGOHOSTNAME;
 
 if (!userName) {
