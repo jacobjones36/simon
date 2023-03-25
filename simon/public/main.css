@@ -23,7 +23,6 @@ body {
   menu {
     flex: 1;
     display: flex;
-    /*  overwrite Bootstrap so the menu does not wrap */
     flex-direction: row !important;
     list-style: none;
   }
@@ -136,6 +135,12 @@ body {
     border-radius: 10px;
     border: solid thin rgb(117, 0, 0);
     background-color: #300;
+  }
+  td{
+    max-width: 40vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   
   .center {
