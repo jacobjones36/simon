@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webprogramming260/simon-db.git"
+    "url": "https://github.com/jacobjones36/simon"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webprogramming260/simon-db/issues"
+    "url": "https://github.com/jacobjones36/simon"
   },
-  "homepage": "https://github.com/webprogramming260/simon-db#readme",
+  "homepage": "https://github.com/jacobjones36/simon",
   "dependencies": {
     "express": "^4.18.2",
     "mongodb": "^4.12.0"
