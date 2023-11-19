@@ -1,16 +1,9 @@
 const {MongoClient} = require('mongodb');
 const bcrypt = require('bcrypt');
 const uuid = require('uuid');
+const config = require('./dbConfig.json');
 
-const userName = process.env.MONGOUSER;
-const password = process.env.MONGOPASSWORD;
-const hostname = process.env.MONGOHOSTNAME;
-
-
-if (!userName) {
-    throw Error('Database not configured. Set environment variables');
-}
-const url = `mongodb+srv://cs260:cs260password@cluster0.xsgxmzv.mongodb.net/`;
+const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
 
 const client = new MongoClient(url);
 const userCollection = client.db('simon').collection('user');
