@@ -20,8 +20,8 @@ printf "\n----> Build the distribution package\n"
 rm -rf dist
 mkdir dist
 cp -r public dist
+cp *.json dist
 cp *.js dist
-cp package* dist
 
 # Step 2
 printf "\n----> Clearing out previous distribution on the target\n"
@@ -37,6 +37,7 @@ scp -r -i "$key" dist/* ubuntu@$hostname:services/$service
 # Step 4
 printf "\n----> Deploy the service on the target\n"
 ssh -i "$key" ubuntu@$hostname << ENDSSH
+bash -i
 cd services/${service}
 npm install
 pm2 restart ${service}
