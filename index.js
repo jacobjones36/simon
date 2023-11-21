@@ -18,6 +18,8 @@ app.use(cookieParser());
 // Serve up the applications static content
 app.use(express.static('public'));
 
+app.set('trust proxy', true);
+
 // Router for service endpoints
 const apiRouter = express.Router();
 app.use(`/api`, apiRouter);
