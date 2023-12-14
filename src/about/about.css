@@ -4,13 +4,15 @@
     padding: 0.5em;
     background: rgb(86, 89, 93);
     border-radius: 5px;
-}
-.quote-box {
+  }
+  
+  .quote-box {
     margin-top: 1em;
     padding: 0.5em;
     border-radius: 5px;
-}
-.quote {
+  }
+  
+  .quote {
     font-style: italic;
   }
   
